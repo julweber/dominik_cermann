@@ -529,7 +529,8 @@ text-shadow:none;
 }
 
 .tp-caption a {
-color:#ff7302;
+color:#ffffff;
+opacity: 0.2;
 text-shadow:none;
 -webkit-transition:all 0.2s ease-out;
 -moz-transition:all 0.2s ease-out;
@@ -538,7 +539,8 @@ text-shadow:none;
 }
 
 .tp-caption a:hover {
-color:#ffa902;
+color:#ffffff;
+opacity: 1;
 }
 
 .tp-caption.thinheadline_dark {
@@ -1311,7 +1313,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		color-stop(0.13, rgb(0,0,0)),
 		color-stop(1, rgb(50,50,50))
 	);
-	
+
 	display:table;max-width:100%; overflow:hidden;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;
 }
 
@@ -2445,21 +2447,21 @@ zoom: 1;
 ***********************************************/
 
 /* CUSTOM BULLETS */
-.tp-bullets.simplebullets.round .bullet			{	
+.tp-bullets.simplebullets.round .bullet			{
 	background: transparent !important;
-	cursor:pointer; 
-	position:relative;	
-	width:8px;	height:8px; 
-	display: block;   
-	float: none; 
+	cursor:pointer;
+	position:relative;
+	width:8px;	height:8px;
+	display: block;
+	float: none;
 	margin: 8px 0;
 	border-radius: 12px;
-	-moz-border-radius:12px; 
-	-khtml-border-radius:12px; 
+	-moz-border-radius:12px;
+	-khtml-border-radius:12px;
 	-webkit-border-radius:12px;
 	border: 1px solid transparent;
 }
-	
+
 .tp-bullets.simplebullets.round .bullet:before {
 	content: '';
   	width: 4px;
@@ -2467,34 +2469,34 @@ zoom: 1;
   	display: block;
 	background: #ffffff;
 	border-radius: 12px;
-	-moz-border-radius:12px; 
-	-khtml-border-radius:12px; 
+	-moz-border-radius:12px;
+	-khtml-border-radius:12px;
 	-webkit-border-radius:12px;
 	position: relative;
 	top: 2px;
 	left: 2px;
 	}
-	
+
 .tp-bullets.simplebullets.round .bullet.selected {
 	border: 1px solid #ffffff;
 	}
-	
+
 .tp-bullets.simplebullets.round .bullet.selected:before {
 	display: none;
 	}
-	
-	
+
+
 /* CUSTOM ARROWS */
-.tp-leftarrow.default, .tp-rightarrow.default {	
+.tp-leftarrow.default, .tp-rightarrow.default {
 	background: none !important;
 	z-index:100;
-	cursor:pointer; 
-	position:relative;	
-	width:auto;	
+	cursor:pointer;
+	position:relative;
+	width:auto;
 	height:30px;
 	color: #ffffff;
 	padding: 0 15px;
-	font-family: 'Lato'; 
+	font-family: 'Lato';
 	font-weight: 400;
 	font-size: 11px;
 	letter-spacing: 0.2em;
@@ -2502,11 +2504,11 @@ zoom: 1;
 	text-transform: uppercase;
 	transition: all .3s ease;
 	}
-	
+
 .tp-leftarrow.default:before { content: 'Prev'; }
 .tp-rightarrow.default:before { content: 'Next'; }
 
-.tp-leftarrow.default:after, .tp-rightarrow.default:after { 
+.tp-leftarrow.default:after, .tp-rightarrow.default:after {
 	content:"";
     width:10px;
     height:1px;
@@ -2517,28 +2519,28 @@ zoom: 1;
 	transition: width .3s ease;
 	}
 	.tp-rightarrow.default:after { left: inherit; right: 0; }
-	
+
 .tp-leftarrow.default:hover, .tp-rightarrow.default:hover { padding: 0 5px; letter-spacing: 0.4em; }
 .tp-leftarrow.default:hover:after, .tp-rightarrow.default:hover:after { width: 100%; }
-	
+
 
 
 
 
 /* Custom Captions*/
 .srcaption-bigwhite, .srcaption-mediumwhite, .srcaption-smallwhite, .srcaption-miniwhite {
-	font-family: 'Montserrat'; 
+	font-family: 'Montserrat';
 	font-weight: 400;
 	color: #ffffff;
 	font-size: 90px;
 	line-height: 104px;
 	}
-	
+
 .srcaption-mediumwhite { font-size: 70px; line-height: 82px; }
 .srcaption-smallwhite { font-size: 44px; line-height: 54px; }
 .srcaption-miniwhite { font-size: 28px; line-height: 38px; }
 .srcaption-microwhite { font-size: 18px; line-height: 26px; }
-	
+
 .tp-caption strong, tp-caption b  { font-weight: 700; }
 
 
@@ -2550,7 +2552,7 @@ zoom: 1;
 	font-weight: 400;
 	font-size: 13px;
 	line-height: 20px !important;
-	letter-spacing: 0.2em; 
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 5px;
@@ -2565,7 +2567,7 @@ zoom: 1;
 	position: relative;
 	}
 	.tp-caption a.sr-button:after {
-	content:"";	
+	content:"";
 	width: 100%;
 	height: 0;
 	position: absolute;
@@ -2579,10 +2581,10 @@ zoom: 1;
     -ms-transition: all 200ms ease;
     transition: all 200ms ease;
 	}
-	
+
 .tp-caption a.sr-button:hover { color: #ffffff; border-color: #0d0d0d; }
 .tp-caption a.sr-button:hover:after { height: 100%; }
-	
+
 .tp-caption a.mini-button { font-size: 10px; padding: 5px 15px; }
 .tp-caption a.small-button { font-size: 11px; padding: 8px 20px; }
 .tp-caption a.medium-button { font-size: 13px; padding: 10px 30px; }

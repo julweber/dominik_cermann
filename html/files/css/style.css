@@ -1822,7 +1822,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	width: 40px;
 	height: 1px;
 	line-height: 1px;
-	background: #0d0d0d;
+	background: #000000;
 	display: block;
 	}
 	.text-light .separator-small span, .overlay-dark .separator-small span { background: #ffffff; }
@@ -2302,8 +2302,9 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	.imgoverlay.overlay-dark:after { background: #0d0d0d; }
 	.imgoverlay.overlay-border:after{top:0;opacity:0;filter:alpha(opacity=0);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
 
+/* TODO: transparent overlays custom  */
 .imgoverlay:hover:after { opacity:1;filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-.imgoverlay.overlay-transparent:hover:after { opacity:0.75;filter: alpha(opacity=75); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=75)"; }
+.imgoverlay.overlay-transparent:hover:after { opacity:0.5;filter: alpha(opacity=50); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
 .imgoverlay.overlay-border:hover:after { opacity:1;filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
 
 .imgoverlay > a {
@@ -2343,7 +2344,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 .imgoverlay .overlaycaption .alttitle,
 .imgoverlay .overlaycaption .separator,
 .imgoverlay .overlaycaption .separator-small {
-	color: #0d0d0d;
+	color: #FFFFFF;
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -2378,6 +2379,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	transform: translate3d(0,-100%,0);
 	padding-bottom: 24px;
 	opacity: 1; filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	color: #000000;
 	}
 
 .imgoverlay:hover .overlaycaption .alttitle {
@@ -2385,6 +2387,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	transform: translate3d(0,0,0);
 	padding-top: 20px;
 	opacity: 1; filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	color: #000000;
 	}
 
 .imgoverlay .overlaycaption .separator span:before,
@@ -2540,3 +2543,23 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 ------------------------------------------------*/
 
 /*YOUR CUSTOM CSS*/
+
+.dc_logo {
+	filter: invert(100%);
+}
+
+.portfolio-overlay-image {
+	filter: blur(20px) grayscale(20%);
+}
+
+.no-link-colors {
+	color: inherit;
+  text-decoration: none;
+	opacity: 0.6;
+}
+
+.no-link-colors:hover {
+	color: inherit;
+  text-decoration: none;
+	opacity: 1;
+}
