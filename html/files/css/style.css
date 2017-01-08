@@ -546,7 +546,7 @@ header #logo {
 	header.sticky-header #logo img { height: 30px; }
 
 #fixed-logo { opacity: 0; filter: alpha(opacity=0); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
-.sticky-header #fixed-logo { opacity: 1; filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
+.sticky-header #fixed-logo { filter: invert(100%); opacity: 1; filter: alpha(opacity=100); -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
 
 #default-logo { position: absolute; top: 0; left: 0; }
 .sticky-header #default-logo { display: none; }
@@ -1100,7 +1100,7 @@ section { }
 .masonry .masonry-item {
 	width: 24.98%;								/* will be overwritten by javascript */
 	margin-right: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 2em;
 	float: left;
 	}
 
