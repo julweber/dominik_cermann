@@ -2570,10 +2570,11 @@ iframe {
   margin:auto;
 }
 
-.white-font {
-	color: white;
+.centered-image {
+	display:block;
+  margin:auto;
 }
 
-.white-separator-span {
-	background: white important!;
+.white-font {
+	color: white;
 }
