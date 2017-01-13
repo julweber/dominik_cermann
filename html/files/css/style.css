@@ -1826,6 +1826,7 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 	display: block;
 	}
 	.text-light .separator-small span, .overlay-dark .separator-small span { background: #ffffff; }
+	.separator-light span { background: white; }
 
 .align-center .separator-small span, .align-center.separator-small span { margin: 0 auto; }
 .align-right .separator-small , .align-right.separator-small { overflow: hidden; }
@@ -2567,4 +2568,12 @@ a.sr-button2:hover { border-color: #ffffff; color: #0d0d0d; }
 iframe {
   display:block;
   margin:auto;
+}
+
+.white-font {
+	color: white;
+}
+
+.white-separator-span {
+	background: white important!;
 }
