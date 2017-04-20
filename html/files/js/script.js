@@ -534,3 +534,18 @@ function splitSection() {
 	}
 
 }
+
+jQuery(window).load(function ($) {
+    jQuery(".fancybox").fancybox({
+        maxWidth	: 800,
+        maxHeight	: 575,
+        fitToView	: false,
+        width		: '100%',
+        height		: '100%',
+        autoSize	: false,
+        closeClick	: true,
+        openEffect	: 'none',
+        closeEffect	: 'none',
+				closeBtn : ''
+    });
+});
